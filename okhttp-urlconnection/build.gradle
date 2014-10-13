@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java.srcDirs = ['src/main/java']
+    }
+}
+
+dependencies {
+    compile project(':okhttp:okhttp')
+    //compile 'com.squareup.okhttp:okhttp:2.0.0'
+}

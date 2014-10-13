@@ -185,6 +185,7 @@ public final class Connection {
     }
 
     socket.setSoTimeout(readTimeout);
+    socket.setSendBufferSize(16384);
     Platform.get().connectSocket(socket, route.inetSocketAddress, connectTimeout);
 
     if (route.address.sslSocketFactory != null) {
