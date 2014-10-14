@@ -14,5 +14,6 @@ sourceSets {
 
 dependencies {
     compile project(':okhttp:okhttp')
+    //compile project(':okhttp')
     //compile 'com.squareup.okhttp:okhttp:2.0.0'
 }
